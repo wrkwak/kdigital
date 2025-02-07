@@ -34,9 +34,10 @@ function init(){
                 window.location.href = "Production reporting_tak.html"
             } else if (e.target.textContent == '자재관리') {
                 // 자재관리 메인 
-                window.location.href = "./TestMM_park/TestMM_html/TestMM_main_park.html" 
+                window.location.href = "TestMM_main_park.html" 
             } else if (e.target.textContent=='품질관리'){
-                window.location.href="workManage_main_kwak.html"
+                window.location.href="TestQA_main_park.html"
+
             } else if (e.target.textContent=='기준관리'){
                 window.location.href="masterdataManage_main_kwak.html"
             }
@@ -63,11 +64,7 @@ function init(){
         })
     }// 메뉴 버튼 눌렀을때 해당 내용 나오게 하기<끝>
 
-    let del_btn = document.querySelector('.del')
-
-    del_btn.addEventListener('click',function(){
-        alert("삭제되었습니다.")
-    })
+    
     document.querySelector('.add').addEventListener('click',function(){
         // alert("추가되었습니다.")
         window.location.href="masterdataManage_edit_kwak.html"
