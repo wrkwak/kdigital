@@ -116,12 +116,7 @@ body{
     justify-content: center;
     border-radius: 10px 10px 0px 0px;
 }
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
+
 .slideMenu-off{
     height: auto;
     width: 400px;
@@ -499,6 +494,9 @@ body{
     .hide{
         display: none;
     }
+    .command-loc{
+        overflow: scroll;
+    }
 
 
 
@@ -607,7 +605,7 @@ body{
     display: flex;
     width: 100%;
     justify-content: center;
-    min-width: 500px;
+    min-width: 400px;
     
 }
 .tab-name-div{
@@ -773,17 +771,23 @@ form{
 
 .titleName{
     /* border: 1px solid rebeccapurple; */
-    width: 13%;
-    text-align: center;
+    width: 10%;
+    /* text-align: center; */
     min-width: 268px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
-.icon-sub{
+.icon-sub {
     /* border: 10px solid red; */
     display: flex;
-    width: 15%;
+    width: 9%;
     display: flex;
     justify-content: space-around;
-    min-width: 268px;
+    min-width: 210px;
+    font-size: small;
+	align-items: center;
 }
 .pre-page,.next-page{
         width: 30%;

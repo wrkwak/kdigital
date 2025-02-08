@@ -18,14 +18,15 @@ body{
 }
 .tab-name{
     border: 1px solid #2f373a;
-    background-color: #2f373a;
-    color: white;
+    background-color: white;
+    color: #2f373a;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40%;
-    width: 75%;
+    height: 28px;
+    /* width: 75%; */
     min-width: 150px;
+    cursor: pointer;
     
 }
 
@@ -54,16 +55,17 @@ body{
     
 }
 .command-th,.command-td{
-    height: 33px;
+    height: 30px;
 }
 .tab-name-div{
     /* border: 5px solid purple; */
     display: flex;
-    height: 10%;
-    width: 15%;
+    height: 30px;
+    width: 152px;
     justify-content: left;
     align-items: center;
     margin-left: 5px;
+
 
 }
 .command-loc{
@@ -93,7 +95,7 @@ form{
     /* border: 5px solid purple; */
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 20%;
     height: 50px;
     align-items: center;
     min-width: 300px;
@@ -101,10 +103,11 @@ form{
 .page{
     border: 1px solid darkgrey;
     height: 60%;
-    width: 15%;
+    width: 58%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    cursor: pointer;
 }
 .page-number{
     width: 30%;
@@ -341,6 +344,9 @@ form{
     .eraser-img{
         margin-top: 5px;
     }
+	.hide{
+		display: none;
+	}
 }
 /* html에서 옮김 (끝)*/
 
@@ -914,16 +920,23 @@ body{
 
 .titleName{
     /* border: 1px solid rebeccapurple; */
-    width: 13%;
-    text-align: center;
+    width: 10%;
+    /* text-align: center; */
     min-width: 268px;
-}
-.icon-sub{
     display: flex;
-    width: 15%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-sub {
+    /* border: 10px solid red; */
+    display: flex;
+    width: 9%;
     display: flex;
     justify-content: space-around;
-    min-width: 268px;
+    min-width: 210px;
+    font-size: small;
+	align-items: center;
 }
 #cate{
     background-color: #2f373a;
@@ -946,4 +959,43 @@ body{
     width: 55px;
     background-color: #2f373a;
     color: white;
+}
+.bold{
+    font-weight: bold;
+}
+.pre-page,.next-page{
+    width: 30%;
+}
+.command-table th:nth-child(1){
+    width: 3%;
+}
+.command-table th:nth-child(2){
+    width: 7%;
+}
+.command-table th:nth-child(3){
+    width: 7%;
+}
+.command-table th:nth-child(4){
+    width: 3%;
+}
+.command-table th:nth-child(5){
+    width: 5%;
+}
+.command-table th:nth-child(6){
+    width: 10%;
+}
+
+
+.tab-con{
+    /* border: 5px solid red; */
+    display: flex;
+    flex-direction: row;
+    /* height: 100px; */
+    margin: 2% 0;
+}
+.switch-color{
+    border: 1px solid #2f373a;
+    background-color: #2f373a;
+    color: white;
+
 }

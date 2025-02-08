@@ -67,14 +67,53 @@ function init(){
     
     document.querySelector('.add').addEventListener('click',function(){
         // alert("추가되었습니다.")
-        window.location.href="masterdataManage_edit_kwak.html"
+        window.location.href="masterdataManage_add_kwak.html"
     })
-    // 로그아웃 버튼 
-    document.querySelector('.subBut').addEventListener('click',function(){
+      // 로그아웃 버튼 
+      document.querySelector('.subBut').addEventListener('click',function(){
         window.location.href = "loginpage_Nam.html"
+      })
+  
+      // 로고버튼
+      document.querySelector('.logo').addEventListener('click',function(){
+        window.location.href = 'dashBoard_kwak.html'
+      })
+         //페이지 표시
+    const nums = document.querySelectorAll('.num')
+
+    for(let i =0; i< nums.length; i++){
+        nums[i].addEventListener('click',function(e){
+            for(let j=0; j<nums.length; j++){
+                nums[j].classList.remove('bold')
+                e.target.classList.add('bold')
+            }
         })
+    }
+    tbnms = document.querySelectorAll('.tab-name')
+
+    for(tbnm of tbnms){
+        tbnm.addEventListener('click',function(e){
+            console.log(e.target.textContent)
+            if(e.target.textContent == '기준관리'){
+                window.location.href = 'masterdataManage_main_kwak.html'
+            } else if(e.target.textContent == 'BOM'){
+                window.location.href = 'bom_main_kwak.html'
+            } else if(e.target.textContent == '공정'){
+                window.location.href = 'processDesc_main.html'
+            }
+        })
+    }
+    const ctds = document.querySelectorAll('.command-td')
+
+    for(ctd of ctds){
+        ctd.addEventListener('click',function(){
+            window.location.href = 'masterdataManage_select_kwak.html'
+        })
+    }
+
 
 }
+
 
     
     
