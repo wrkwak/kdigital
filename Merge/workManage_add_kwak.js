@@ -72,16 +72,16 @@ function init(){
         console.log(e.target.value)
         // document.querySelector('#bom').value += 'A-NY-80'
         // document.querySelector('#prc').value += 'NY-80'
-        document.querySelector('#pcd').value += 'A80'
+        document.querySelector('#pcd').value = 'A80'
 
         document.querySelector(".bomTitle").innerHTML = 'A-NY-80'
-        document.querySelector('#bomDesc').innerHTML = `고무로 접착된 식물성 기름 5%<br>
-                                                        고운 속돌가루 54%<br>
-                                                        황 10%<br>
-                                                        염화비닐 30%<br>
-                                                        프탈레이트계 가소제1%<br>
-                                                        color-blue 1%<br>
-                                                        탄산칼슘 10%`
+        document.querySelector('#bomDesc').innerHTML = `고무로 접착된 식물성 기름 5g<br>
+                                                        고운 속돌가루 54g<br>
+                                                        황 10g<br>
+                                                        염화비닐 30g<br>
+                                                        프탈레이트계 가소제1g<br>
+                                                        color-blue 1g<br>
+                                                        탄산칼슘 10g`
         document.querySelector(".prcTitle").innerHTML = 'NY-80'
         document.querySelector('#prcDesc').innerHTML = `1. 지우개 재료를 혼합기에 넣고 반죽을 만든다<br>
                                                             2. 지우개 반죽을 롤러에 넣는다<br>
@@ -98,6 +98,10 @@ function init(){
                                                             13. 포장한다`
 
         document.querySelector('img').src='https://contents.kyobobook.co.kr/sih/fit-in/400x0/gift/pdt/1720/hot1680745213388.jpg'
+        console.log(document.querySelector('#ordcnt'))
+        document.querySelector('#ordcnt').value = `4000`
+        document.querySelector('#hoNo').value = `1호기`
+        document.querySelector('#line').value = `A라인`
 
 
     })
